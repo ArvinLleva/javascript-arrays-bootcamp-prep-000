@@ -9,9 +9,9 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 
 function addElementToEndOfArray(array, element){
-  return array.shift(element)
+  return [...array, element]
 }
 
-function destructivelyAddElementToEndOfArray(){
-  return [...array, element]
+function destructivelyAddElementToEndOfArray(array, element){
+ return array.shift(element)
 }
